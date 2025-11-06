@@ -42,7 +42,7 @@ const Hobbies: React.FC = () => {
   ];
 
   const getColorClass = (color: string) => {
-    switch(color) {
+    switch (color) {
       case 'cyber-cyan': return 'border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan/10';
       case 'cyber-purple': return 'border-cyber-purple text-cyber-purple hover:bg-cyber-purple/10';
       case 'cyber-pink': return 'border-cyber-pink text-cyber-pink hover:bg-cyber-pink/10';
@@ -63,18 +63,18 @@ const Hobbies: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {hobbies.map((hobby, index) => (
-            <div 
+            <div
               key={index}
               className={`bg-noir-darker border-2 ${getColorClass(hobby.color)} rounded-lg p-6 transition-all duration-300 cursor-pointer group`}
             >
               <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {hobby.icon}
               </div>
-              
+
               <h3 className="text-2xl font-bold text-cyber-white mb-3 font-mono">
                 <span className={`text-${hobby.color}`}>#</span> {hobby.title}
               </h3>
-              
+
               <p className="text-cyber-gray leading-relaxed">
                 {hobby.description}
               </p>
