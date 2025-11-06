@@ -40,18 +40,13 @@ const AboutMe: React.FC = () => {
           
           <div className="relative">
             <div className="w-full h-96 bg-linear-to-br from-cyber-cyan/20 via-cyber-purple/20 to-cyber-pink/20 rounded-lg border-2 border-cyber-cyan/50 relative overflow-hidden">
-              <div className="absolute inset-0 bg-noir-darker/50 backdrop-blur-sm"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="text-6xl font-bold text-cyber-cyan neon-glow">{'{ }'}</div>
-                  <p className="text-cyber-purple font-mono">// Your photo here</p>
-                  <div className="flex gap-2 justify-center">
-                    <div className="w-2 h-2 bg-cyber-cyan rounded-full animate-pulse"></div>
-                    <div className="w-2 h-2 bg-cyber-pink rounded-full animate-pulse delay-100"></div>
-                    <div className="w-2 h-2 bg-cyber-purple rounded-full animate-pulse delay-200"></div>
-                  </div>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-noir-darker/30 backdrop-blur-sm"></div>
+              <img 
+                src="/images/profile_pic.jpg" 
+                alt="Maheen Mashrur Hoque" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-noir-black/80 via-transparent to-transparent"></div>
             </div>
             
             {/* Decorative elements */}
