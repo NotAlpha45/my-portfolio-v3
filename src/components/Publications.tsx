@@ -13,30 +13,37 @@ interface Publication {
 const Publications: React.FC = () => {
   const publications: Publication[] = [
     {
-      title: 'Deep Learning Approaches for Real-Time Object Detection in Autonomous Systems',
-      authors: 'Your Name, Co-Author A, Co-Author B',
-      venue: 'International Conference on Computer Vision (ICCV)',
-      year: 2024,
-      type: 'conference',
-      doi: '10.1109/ICCV.2024.12345',
-      url: 'https://arxiv.org/abs/example',
-    },
-    {
-      title: 'Scalable Architectures for Cloud-Native Applications',
-      authors: 'Your Name, Collaborator X',
-      venue: 'IEEE Transactions on Cloud Computing',
-      year: 2023,
+      title: 'Asteroid Family Classification with Machine Learning: A Novel Two Step Approach',
+      authors: 'Maheen Mashrur Hoque, et al.',
+      venue: 'Experimental Astronomy (Springer)',
+      year: 2025,
       type: 'journal',
-      doi: '10.1109/TCC.2023.67890',
-      url: 'https://ieeexplore.ieee.org/example',
+      doi: '10.1007/s10686-025-09982-y',
+      url: 'https://link.springer.com/article/10.1007/s10686-025-09982-y',
     },
     {
-      title: 'Novel Approaches to Natural Language Processing in Multilingual Contexts',
-      authors: 'Your Name, Research Team',
-      venue: 'Workshop on NLP Applications',
-      year: 2023,
-      type: 'workshop',
-      url: 'https://aclanthology.org/example',
+      title: 'AI Tools in Education: Investigating University Students\' Motivations, Institutional Policies, and Ethical Considerations in Bangladesh',
+      authors: 'Maheen Mashrur Hoque, Research Team',
+      venue: 'OzCHI 2025',
+      year: 2025,
+      type: 'conference',
+      url: 'https://www.ozchi.org/2025/',
+    },
+    {
+      title: 'Enhancing Bangla Cyberbullying Detection with Data Augmentation: A Performance Evaluation',
+      authors: 'Maheen Mashrur Hoque, Co-Authors',
+      venue: 'SCoRED 2025',
+      year: 2025,
+      type: 'conference',
+      url: 'https://ieeemy.org/scored/',
+    },
+    {
+      title: 'A Transformer-Based Approach for Classifying Software Requirements',
+      authors: 'Maheen Mashrur Hoque',
+      venue: 'Islamic University of Technology - Undergraduate Thesis',
+      year: 2024,
+      type: 'preprint',
+      url: 'http://103.82.172.44:8080/xmlui/handle/123456789/2408',
     },
   ];
 
@@ -123,10 +130,10 @@ const Publications: React.FC = () => {
         {/* Stats */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { label: 'Publications', value: '12+', color: 'cyber-cyan' },
-            { label: 'Citations', value: '156', color: 'cyber-purple' },
-            { label: 'h-index', value: '8', color: 'cyber-pink' },
-            { label: 'Collaborators', value: '24', color: 'cyber-blue' },
+            { label: 'Publications', value: '4', color: 'cyber-cyan' },
+            { label: 'Conferences', value: '2', color: 'cyber-purple' },
+            { label: 'Journal Papers', value: '1', color: 'cyber-pink' },
+            { label: 'Research Areas', value: '3', color: 'cyber-blue' },
           ].map((stat, index) => (
             <div key={index} className="bg-noir-darker border border-cyber-cyan/20 rounded-lg p-6 text-center">
               <div className={`text-3xl font-bold text-${stat.color} mb-2`}>{stat.value}</div>

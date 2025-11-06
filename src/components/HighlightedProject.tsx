@@ -11,11 +11,11 @@ interface Project {
 
 const HighlightedProject: React.FC = () => {
   const project: Project = {
-    title: 'Project Nexus',
-    description: 'A cutting-edge full-stack application that revolutionizes how teams collaborate in real-time. Built with modern technologies and scalable architecture, it features real-time synchronization, advanced analytics, and an intuitive user interface.',
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'WebSocket', 'Redis'],
-    githubUrl: 'https://github.com/yourusername/project-nexus',
-    liveUrl: 'https://project-nexus.demo.com',
+    title: 'Reg-AI',
+    description: 'A comprehensive tax expert AI agent built with a knowledge base of 1.5 million+ records of tax-related information. Engineered a sophisticated data pipeline leveraging Agno and Pinecone to accelerate query speeds up to 2x, significantly improving the AI agent\'s response time for tax professionals worldwide.',
+    technologies: ['Next.js', 'React', 'FastAPI', 'Langchain', 'Agno', 'Transformers', 'Pinecone'],
+    githubUrl: 'https://github.com/NotAlpha45',
+    liveUrl: 'https://www.kazsoftware.com/',
   };
 
   return (
@@ -110,18 +110,49 @@ const HighlightedProject: React.FC = () => {
 
         {/* Additional projects grid */}
         <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((_, index) => (
-            <div 
-              key={index}
-              className="bg-noir-darker border border-cyber-pink/20 rounded-lg p-6 hover:border-cyber-pink/50 transition-all cursor-pointer group"
-            >
-              <div className="h-32 bg-noir-black rounded mb-4 flex items-center justify-center border border-cyber-pink/20 group-hover:border-cyber-pink/40 transition-all">
-                <span className="text-cyber-pink/50 text-4xl">+</span>
-              </div>
-              <h4 className="text-cyber-white font-mono mb-2">Other Project {index + 1}</h4>
-              <p className="text-cyber-gray text-sm">Click to explore more projects</p>
+          <div 
+            className="bg-noir-darker border border-cyber-pink/20 rounded-lg p-6 hover:border-cyber-pink/50 transition-all cursor-pointer group"
+          >
+            <div className="h-32 bg-noir-black rounded mb-4 flex items-center justify-center border border-cyber-pink/20 group-hover:border-cyber-pink/40 transition-all">
+              <span className="text-cyber-pink/50 text-4xl font-mono">RA</span>
             </div>
-          ))}
+            <h4 className="text-cyber-white font-mono mb-2 font-bold">Reganalytics</h4>
+            <p className="text-cyber-gray text-sm mb-3">Modular tax analytics platform serving 10,000+ worldwide users with real-time tax tools</p>
+            <div className="flex flex-wrap gap-1">
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">React</span>
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">Single-SPA</span>
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">.NET</span>
+            </div>
+          </div>
+          
+          <div 
+            className="bg-noir-darker border border-cyber-pink/20 rounded-lg p-6 hover:border-cyber-pink/50 transition-all cursor-pointer group"
+          >
+            <div className="h-32 bg-noir-black rounded mb-4 flex items-center justify-center border border-cyber-pink/20 group-hover:border-cyber-pink/40 transition-all">
+              <span className="text-cyber-pink/50 text-4xl font-mono">CB</span>
+            </div>
+            <h4 className="text-cyber-white font-mono mb-2 font-bold">Cyberbullying Detection</h4>
+            <p className="text-cyber-gray text-sm mb-3">Empirical study benchmarking models for detecting cyberbullying in Bangla text</p>
+            <div className="flex flex-wrap gap-1">
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">Python</span>
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">Transformers</span>
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">PyTorch</span>
+            </div>
+          </div>
+          
+          <div 
+            className="bg-noir-darker border border-cyber-pink/20 rounded-lg p-6 hover:border-cyber-pink/50 transition-all cursor-pointer group"
+          >
+            <div className="h-32 bg-noir-black rounded mb-4 flex items-center justify-center border border-cyber-pink/20 group-hover:border-cyber-pink/40 transition-all">
+              <span className="text-cyber-pink/50 text-4xl font-mono">SR</span>
+            </div>
+            <h4 className="text-cyber-white font-mono mb-2 font-bold">Requirements Classifier</h4>
+            <p className="text-cyber-gray text-sm mb-3">Transformer-based ensemble for classifying software requirements with RAG-based zero-shot method</p>
+            <div className="flex flex-wrap gap-1">
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">PyTorch</span>
+              <span className="text-xs px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink rounded">ChromaDB</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

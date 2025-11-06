@@ -9,13 +9,13 @@ interface Skill {
 const Skills: React.FC = () => {
   const skills: Skill[] = [
     { name: 'React/TypeScript', level: 90, color: 'cyber-cyan' },
-    { name: 'Node.js', level: 85, color: 'cyber-purple' },
-    { name: 'Python', level: 88, color: 'cyber-pink' },
-    { name: 'Database Design', level: 80, color: 'cyber-blue' },
-    { name: 'UI/UX Design', level: 75, color: 'cyber-cyan' },
-    { name: 'Cloud Services', level: 82, color: 'cyber-purple' },
-    { name: 'DevOps', level: 78, color: 'cyber-pink' },
-    { name: 'Machine Learning', level: 70, color: 'cyber-blue' },
+    { name: 'Python & ML/AI', level: 88, color: 'cyber-purple' },
+    { name: 'FastAPI/Express', level: 85, color: 'cyber-pink' },
+    { name: 'Next.js/Svelte', level: 82, color: 'cyber-blue' },
+    { name: 'PyTorch/Transformers', level: 85, color: 'cyber-cyan' },
+    { name: 'Database Design', level: 80, color: 'cyber-purple' },
+    { name: 'UI/UX & Figma', level: 78, color: 'cyber-pink' },
+    { name: 'Software Architecture', level: 82, color: 'cyber-blue' },
   ];
 
   const getColorClass = (color: string) => {
@@ -90,7 +90,7 @@ const Skills: React.FC = () => {
 
         {/* Additional skills tags */}
         <div className="mt-12 flex flex-wrap gap-3 justify-center">
-          {['Git', 'Docker', 'AWS', 'GraphQL', 'REST APIs', 'Agile', 'CI/CD', 'Testing'].map((tag, index) => (
+          {['Webpack', 'Vite', 'Single-SPA', 'Langchain', 'Agno', 'Pinecone', 'MongoDB', 'Git', 'Tailwind', 'Bootstrap', '.NET', 'C++', 'Java', 'R'].map((tag, index) => (
             <span 
               key={index}
               className="px-4 py-2 bg-noir-darker border border-cyber-cyan/50 text-cyber-cyan rounded-full text-sm font-mono hover:bg-cyber-cyan/10 hover:border-cyber-cyan transition-all cursor-pointer"

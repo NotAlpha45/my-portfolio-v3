@@ -12,43 +12,43 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
-      company: 'Tech Innovations Inc.',
-      position: 'Senior Full Stack Developer',
-      duration: '2022 - Present',
-      location: 'San Francisco, CA',
+      company: 'Kaz Software',
+      position: 'Associate Software Engineer',
+      duration: 'Jun 2024 - Present',
+      location: 'Remote',
       description: [
-        'Led development of microservices architecture serving 1M+ users',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Mentored team of 5 junior developers in modern web technologies',
-        'Architected real-time data processing system handling 100K events/second',
+        'Developed and maintained new features, enhancing functionality for thousands of tax professionals',
+        'Designed and implemented tax expert AI Agent, enabling 2x speed in information retrieval',
+        'Optimized API and components, improving load time by 30%',
+        'Spearheaded redesign of UI components utilizing React, resulting in 15% decrease in average task completion time',
       ],
-      technologies: ['React', 'Node.js', 'Kubernetes', 'AWS', 'PostgreSQL'],
+      technologies: ['React', 'TypeScript', 'FastAPI', 'Langchain', 'Agno', 'Pinecone', '.NET'],
     },
     {
-      company: 'Digital Solutions Corp',
-      position: 'Full Stack Developer',
-      duration: '2020 - 2022',
-      location: 'New York, NY',
+      company: 'Kaz Software',
+      position: 'Software Engineering Intern',
+      duration: 'Jun 2023 - Oct 2023',
+      location: 'Remote',
       description: [
-        'Developed and maintained e-commerce platform generating $5M+ annual revenue',
-        'Optimized database queries improving response time by 40%',
-        'Collaborated with UX team to redesign checkout flow, increasing conversion by 25%',
-        'Integrated third-party payment gateways and shipping APIs',
+        'Integrated 20+ advanced APIs into Reganalytics, helping in the extension of features',
+        'Contributed to front-end development by making 30+ components, ensuring seamless user experiences',
+        'Collaborated with senior developers to implement modular architecture using Single-SPA',
+        'Participated in code reviews and agile development processes',
       ],
-      technologies: ['Vue.js', 'Python', 'Django', 'MongoDB', 'Redis'],
+      technologies: ['React', 'Single-SPA', 'Webpack', 'Bootstrap', 'Tailwind', '.NET'],
     },
     {
-      company: 'StartUp Ventures',
-      position: 'Junior Developer',
-      duration: '2018 - 2020',
-      location: 'Austin, TX',
+      company: 'New Horizons',
+      position: 'Python Instructor',
+      duration: 'Feb 2023 - Mar 2023',
+      location: 'Dhaka, Bangladesh',
       description: [
-        'Built responsive web applications using modern JavaScript frameworks',
-        'Participated in agile development processes and daily standups',
-        'Wrote unit and integration tests achieving 85% code coverage',
-        'Contributed to open-source projects and internal tool development',
+        'Taught Python programming, covering 20+ data structures and algorithms',
+        'Mentored students on 2 real-world projects involving data analysis and automation',
+        'Developed course materials and hands-on coding exercises',
+        'Conducted assessments and provided personalized feedback to improve student learning',
       ],
-      technologies: ['Angular', 'TypeScript', 'Express.js', 'MySQL'],
+      technologies: ['Python', 'NumPy', 'Pandas', 'Data Structures', 'Algorithms'],
     },
   ];
 
@@ -117,16 +117,16 @@ const Experience: React.FC = () => {
         {/* Additional Info */}
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           <div className="bg-noir-darker border border-cyber-purple/30 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-cyber-purple mb-2">6+</div>
+            <div className="text-4xl font-bold text-cyber-purple mb-2">1.5+</div>
             <div className="text-cyber-gray uppercase text-sm tracking-wider">Years Experience</div>
           </div>
           <div className="bg-noir-darker border border-cyber-cyan/30 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-cyber-cyan mb-2">50+</div>
-            <div className="text-cyber-gray uppercase text-sm tracking-wider">Projects Completed</div>
+            <div className="text-4xl font-bold text-cyber-cyan mb-2">10K+</div>
+            <div className="text-cyber-gray uppercase text-sm tracking-wider">Users Impacted</div>
           </div>
           <div className="bg-noir-darker border border-cyber-pink/30 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-cyber-pink mb-2">15+</div>
-            <div className="text-cyber-gray uppercase text-sm tracking-wider">Technologies Mastered</div>
+            <div className="text-4xl font-bold text-cyber-pink mb-2">50+</div>
+            <div className="text-cyber-gray uppercase text-sm tracking-wider">Components Built</div>
           </div>
         </div>
       </div>

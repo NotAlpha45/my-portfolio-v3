@@ -12,24 +12,28 @@ const AboutMe: React.FC = () => {
           <div className="space-y-6">
             <div className="border-l-4 border-cyber-pink pl-6">
               <p className="text-xl md:text-2xl text-cyber-white leading-relaxed">
-                <span className="text-cyber-cyan font-mono">&gt;</span> Hello, I'm a passionate developer 
-                navigating the digital frontier of the 21st century.
+                <span className="text-cyber-cyan font-mono">&gt;</span> Hello, I'm Maheen Mashrur Hoque, 
+                a Software Engineering graduate passionate about developing scalable applications and 
+                AI-driven solutions.
               </p>
             </div>
             
             <div className="border-l-4 border-cyber-purple pl-6">
               <p className="text-lg text-cyber-gray leading-relaxed">
-                <span className="text-cyber-purple font-mono">&gt;</span> I specialize in creating 
-                immersive digital experiences that blend cutting-edge technology with creative design. 
-                My journey in tech is driven by curiosity and a relentless pursuit of innovation.
+                <span className="text-cyber-purple font-mono">&gt;</span> With a strong research background 
+                in transformer-based models and machine learning, I specialize in creating innovative solutions 
+                that bridge the gap between cutting-edge AI research and practical software engineering. 
+                Currently working as an Associate Software Engineer at Kaz Software, where I develop tax analytics 
+                platforms and AI-powered tools.
               </p>
             </div>
             
             <div className="border-l-4 border-cyber-blue pl-6">
               <p className="text-lg text-cyber-gray leading-relaxed">
-                <span className="text-cyber-blue font-mono">&gt;</span> When I'm not coding, you'll find 
-                me exploring new technologies, contributing to open-source projects, and staying ahead 
-                of the curve in this ever-evolving digital landscape.
+                <span className="text-cyber-blue font-mono">&gt;</span> My journey spans from publishing 
+                research in asteroid classification and AI ethics to building production-grade web applications 
+                serving thousands of users. I'm driven by curiosity and a relentless pursuit of innovation in 
+                the interdisciplinary space of AI and software engineering.
               </p>
             </div>
           </div>
