@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cyberpunk Noir Color Palette */
+  --color-noir-black: #0a0a0f;
+  --color-noir-dark: #151520;
+  --color-noir-darker: #1a1a2e;
+  --color-noir-gray: #2d2d44;
+  
+  --color-cyber-cyan: #00f0ff;
+  --color-cyber-cyan-dark: #00a8b5;
+  --color-cyber-pink: #ff00ff;
+  --color-cyber-pink-dark: #b300b3;
+  --color-cyber-purple: #b040ff;
+  --color-cyber-purple-dark: #7a2cbf;
+  --color-cyber-blue: #4040ff;
+  --color-cyber-blue-dark: #3030cc;
+  --color-cyber-yellow: #ffff00;
+  --color-cyber-white: #e8e8f0;
+  --color-cyber-gray: #8888a8;
+}
+
+@layer base {
+  body {
+    @apply bg-noir-black text-cyber-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+  }
+
+  code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+  }
+}
+
+/* Cyberpunk glitch effect */
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 255, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 255, 0.75),
+      -0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 255, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 255, 0.75),
+      -0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 255, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 255, 0.75),
+      -0.05em -0.05em 0 rgba(255, 255, 0, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 255, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 255, 0.75),
+      -0.05em -0.05em 0 rgba(255, 255, 0, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 255, 0.75),
+      0.05em 0 0 rgba(0, 255, 255, 0.75),
+      0 -0.05em 0 rgba(255, 255, 0, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 255, 0.75),
+      0.05em 0 0 rgba(0, 255, 255, 0.75),
+      0 -0.05em 0 rgba(255, 255, 0, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 255, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 255, 0.75),
+      -0.025em -0.05em 0 rgba(255, 255, 0, 0.75);
+  }
+}
+
+.glitch-effect {
+  animation: glitch 1s infinite;
+}
+
+/* Neon glow effect */
+.neon-glow {
+  text-shadow: 0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 40px currentColor;
+}
+
+/* Scan line effect */
+@keyframes scan {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.scanline {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 255, 255, 0.1);
+  top: 0;
+  left: 0;
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+}
