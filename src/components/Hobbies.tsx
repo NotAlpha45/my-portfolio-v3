@@ -11,34 +11,40 @@ const Hobbies: React.FC = () => {
   const hobbies: Hobby[] = [
     {
       title: 'Reading',
-      description: 'Diving into sci-fi novels, tech blogs, and research papers. Always expanding knowledge through books.',
+      description: 'Fiction, non-fiction, or even boring research papers - everything has something to offer. I am always open to more recommendations from people.',
       icon: '📚',
       color: 'cyber-cyan',
     },
     {
       title: 'Writing',
-      description: 'Expressing thoughts through words. Writing about technology, experiences, and creative storytelling.',
+      description: 'As an introvert, this is one of the few ways that I express myself. I see little verses everywhere around me, I only write them down.',
       icon: '✍️',
       color: 'cyber-purple',
     },
     {
       title: 'Riding Motorbikes',
-      description: 'The thrill of the open road. Enjoying the freedom and adrenaline of motorcycle riding.',
+      description: 'Two wheels, an engine, and a soul that looks beyond the horizon. The ride thrills me and the engineering fascinates me - a perfect coping mechanism.',
       icon: "🏍️",
       color: 'cyber-pink',
     },
     {
       title: 'Touring',
-      description: 'Exploring new places and cultures. Always ready for the next adventure on two wheels or otherwise.',
+      description: 'The open road calls to me, and I answer gladly. The view, the breeze, and the food of someplace unknown - all make the journey worthwhile.',
       icon: '🗺️',
       color: 'cyber-blue',
     },
     {
       title: 'Gaming',
-      description: 'Exploring virtual worlds and competitive gaming. Fan of RPGs, strategy games, and indie titles.',
+      description: 'Not a professional gamer by any means, but games as a medium of art and storytelling is something that truly intrigues me. Again, I am open to game recommendations!',
       icon: '🎮',
       color: 'cyber-cyan',
     },
+    {
+      title: 'Teaching',
+      description: "'I believe that knowledge is destined to be shared. I've had a hard time learning things on my own, so I always try to help others like me to the best of my ability.",
+      icon: '👨‍🏫',
+      color: 'cyber-purple',
+    }
   ];
 
   const getColorClass = (color: string) => {
@@ -122,7 +128,7 @@ const Hobbies: React.FC = () => {
         <div className="mt-12 text-center">
           <blockquote className="text-xl md:text-2xl text-cyber-white italic border-l-4 border-cyber-cyan pl-6 py-4 inline-block">
             <span className="text-cyber-cyan">"</span>
-            Life is not just about writing code; it's about experiencing the world in all its dimensions.
+            You live in the present. The past is something you can never return to, and the future will always be ahead of you. What you do now, is what matters to everyone, including yourself. So, you might as well enjoy the little things that you have right now. 
             <span className="text-cyber-cyan">"</span>
           </blockquote>
         </div>
