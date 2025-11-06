@@ -15,7 +15,7 @@ const HighlightedProject: React.FC = () => {
     description: 'A comprehensive tax expert AI agent built with a knowledge base of 1.5 million+ records of tax-related information. Engineered a sophisticated data pipeline leveraging Agno and Pinecone to accelerate query speeds up to 2x, significantly improving the AI agent\'s response time for tax professionals worldwide.',
     technologies: ['Next.js', 'React', 'FastAPI', 'Langchain', 'Agno', 'Transformers', 'Pinecone'],
     githubUrl: 'https://github.com/NotAlpha45',
-    liveUrl: 'https://www.kazsoftware.com/',
+    liveUrl: 'https://regplus.reganalytics.com/',
   };
 
   return (
