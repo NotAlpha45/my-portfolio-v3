@@ -10,40 +10,34 @@ interface Hobby {
 const Hobbies: React.FC = () => {
   const hobbies: Hobby[] = [
     {
+      title: 'Reading',
+      description: 'Diving into sci-fi novels, tech blogs, and research papers. Always expanding knowledge through books.',
+      icon: '📚',
+      color: 'cyber-cyan',
+    },
+    {
+      title: 'Writing',
+      description: 'Expressing thoughts through words. Writing about technology, experiences, and creative storytelling.',
+      icon: '✍️',
+      color: 'cyber-purple',
+    },
+    {
+      title: 'Riding Motorbikes',
+      description: 'The thrill of the open road. Enjoying the freedom and adrenaline of motorcycle riding.',
+      icon: "🏍️",
+      color: 'cyber-pink',
+    },
+    {
+      title: 'Touring',
+      description: 'Exploring new places and cultures. Always ready for the next adventure on two wheels or otherwise.',
+      icon: '🗺️',
+      color: 'cyber-blue',
+    },
+    {
       title: 'Gaming',
       description: 'Exploring virtual worlds and competitive gaming. Fan of RPGs, strategy games, and indie titles.',
       icon: '🎮',
       color: 'cyber-cyan',
-    },
-    {
-      title: 'Photography',
-      description: 'Capturing moments through the lens. Specializing in urban photography and night scenes.',
-      icon: '📸',
-      color: 'cyber-purple',
-    },
-    {
-      title: 'Music Production',
-      description: 'Creating electronic music and experimenting with synthesizers and digital audio workstations.',
-      icon: '🎵',
-      color: 'cyber-pink',
-    },
-    {
-      title: 'Reading',
-      description: 'Diving into sci-fi novels, tech blogs, and research papers. Always learning something new.',
-      icon: '📚',
-      color: 'cyber-blue',
-    },
-    {
-      title: 'Fitness',
-      description: 'Staying active through gym workouts, running, and martial arts training.',
-      icon: '💪',
-      color: 'cyber-cyan',
-    },
-    {
-      title: 'Travel',
-      description: 'Exploring new places, cultures, and cuisines. Always ready for the next adventure.',
-      icon: '✈️',
-      color: 'cyber-purple',
     },
   ];
 

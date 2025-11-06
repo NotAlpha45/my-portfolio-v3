@@ -121,8 +121,8 @@ const Experience: React.FC = () => {
             <div className="text-cyber-gray uppercase text-sm tracking-wider">Years Experience</div>
           </div>
           <div className="bg-noir-darker border border-cyber-cyan/30 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-cyber-cyan mb-2">10K+</div>
-            <div className="text-cyber-gray uppercase text-sm tracking-wider">Users Impacted</div>
+            <div className="text-4xl font-bold text-cyber-cyan mb-2">300+</div>
+            <div className="text-cyber-gray uppercase text-sm tracking-wider">Optimizations</div>
           </div>
           <div className="bg-noir-darker border border-cyber-pink/30 rounded-lg p-6 text-center">
             <div className="text-4xl font-bold text-cyber-pink mb-2">50+</div>
