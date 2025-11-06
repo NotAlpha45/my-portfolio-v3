@@ -12,7 +12,7 @@ interface Project {
 const HighlightedProject: React.FC = () => {
   const project: Project = {
     title: 'Reg-AI',
-    description: 'A comprehensive tax expert AI agent built with a knowledge base of 1.5 million+ records of tax-related information. Engineered a sophisticated data pipeline leveraging Agno and Pinecone to accelerate query speeds up to 2x, significantly improving the AI agent\'s response time for tax professionals worldwide.',
+    description: 'A comprehensive tax expert AI agent system built with a knowledge base of 1.5 million+ records of tax-related information. From question-answering to analysis - this system can do many things. Engineered a sophisticated data pipeline leveraging Agno and Pinecone to accelerate query speeds up to 2x, significantly improving the AI agent\'s response time for tax professionals worldwide.',
     technologies: ['Next.js', 'React', 'FastAPI', 'Langchain', 'Agno', 'Transformers', 'Pinecone'],
     githubUrl: 'https://github.com/NotAlpha45',
     liveUrl: 'https://regplus.reganalytics.com/',
