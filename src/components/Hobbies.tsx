@@ -125,7 +125,7 @@ const Hobbies: React.FC = () => {
         </div>
 
         {/* Quote */}
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-justify">
           <blockquote className="text-xl md:text-2xl text-cyber-white italic border-l-4 border-cyber-cyan pl-6 py-4 inline-block">
             <span className="text-cyber-cyan">"</span>
             You live in the present. The past is something you can never return to, and the future will always be ahead of you. What you do now, is what matters to everyone, including yourself. So, you might as well enjoy the little things that you have right now. 
