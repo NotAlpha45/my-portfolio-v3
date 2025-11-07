@@ -6,48 +6,41 @@ interface Project {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
-  imageUrl?: string;
+  icon?: string;
 }
 
 const HighlightedProject: React.FC = () => {
   const projects: Project[] = [
     {
       title: 'Reg-AI',
-      description: 'A comprehensive tax expert AI agent system built with a knowledge base of 1.5 million+ records of tax-related information. From question-answering to analysis - this system can do many things. Engineered a sophisticated data pipeline leveraging Agno and Pinecone to accelerate query speeds up to 2x.',
+      description: 'A comprehensive tax expert AI agent system built with a knowledge base of 1.5 million+ records of tax-related information. Engineered a sophisticated data pipeline leveraging Agno and Pinecone to accelerate query speeds up to 2x.',
       technologies: ['Next.js', 'React', 'FastAPI', 'Langchain', 'Agno', 'Transformers', 'Pinecone'],
       githubUrl: 'https://github.com/NotAlpha45',
       liveUrl: 'https://regplus.reganalytics.com/',
-      imageUrl: '/images/reg.png',
+      icon: 'RA',
     },
     {
       title: 'Reganalytics',
-      description: 'Modular tax analytics platform serving 10,000+ worldwide users with real-time tax tools and comprehensive financial analysis capabilities.',
+      description: 'Modular tax analytics platform serving 10,000+ worldwide users with real-time tax tools and comprehensive analytics capabilities.',
       technologies: ['React', 'Single-SPA', '.NET'],
-      liveUrl: 'https://regplus.reganalytics.com/',
+      liveUrl: 'https://reganalytics.com/',
+      icon: 'RG',
     },
     {
       title: 'Cyberbullying Detection',
-      description: 'Empirical study benchmarking models for detecting cyberbullying in Bangla text using advanced NLP techniques and transformer architectures.',
+      description: 'Empirical study benchmarking models for detecting cyberbullying in Bangla text using state-of-the-art transformer models.',
       technologies: ['Python', 'Transformers', 'PyTorch'],
-      githubUrl: 'https://github.com/NotAlpha45/cyberbullying-detection',
+      githubUrl: 'https://github.com/NotAlpha45',
+      icon: 'CB',
     },
     {
       title: 'Requirements Classifier',
-      description: 'Transformer-based ensemble for classifying software requirements with RAG-based zero-shot method for improved requirement analysis.',
-      technologies: ['PyTorch', 'ChromaDB'],
-      githubUrl: 'https://github.com/NotAlpha45/requirements-classifier',
+      description: 'Transformer-based ensemble for classifying software requirements with RAG-based zero-shot method for improved accuracy.',
+      technologies: ['PyTorch', 'ChromaDB', 'Transformers'],
+      githubUrl: 'https://github.com/NotAlpha45',
+      icon: 'RC',
     },
   ];
-
-  const getViewUrl = (project: Project) => {
-    return project.liveUrl || project.githubUrl || '#';
-  };
-
-  const getViewText = (project: Project) => {
-    if (project.liveUrl) return 'Live Demo';
-    if (project.githubUrl) return 'View Code';
-    return 'View';
-  };
 
   return (
     <section id="project" className="min-h-screen flex items-center justify-center px-6 py-20 scanline">
@@ -56,79 +49,70 @@ const HighlightedProject: React.FC = () => {
           <span className="glitch-effect">PROJECTS</span>
         </h2>
         <p className="text-cyber-gray font-mono mb-12 text-xl">
-          <span className="text-cyber-pink">&gt;</span> Showcase Excellence
+          <span className="text-cyber-pink">&gt;</span> Featured Work
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-noir-darker border-2 border-cyber-pink/30 rounded-lg overflow-hidden hover:border-cyber-pink/60 transition-all duration-300 shadow-2xl group"
+              className="bg-noir-darker border-2 border-cyber-pink/30 rounded-lg p-6 hover:border-cyber-pink/60 transition-all duration-300 group flex flex-col"
             >
-              {/* Project Image/Placeholder */}
-              <div className="relative h-48 bg-linear-to-br from-cyber-pink/20 via-cyber-purple/20 to-cyber-cyan/20 overflow-hidden">
-                <div className="absolute inset-0 bg-noir-black/50 backdrop-blur-sm"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  {project.imageUrl ? (
-                    <img
-                      src={project.imageUrl}
-                      alt={`${project.title} Screenshot`}
-                      className="max-h-full max-w-full object-contain z-10"
-                    />
-                  ) : (
-                    <span className="text-cyber-pink/50 text-4xl font-mono">
-                      {project.title.split(' ').map(word => word[0]).join('').toUpperCase()}
-                    </span>
-                  )}
-                </div>
-
-                {/* Decorative grid overlay */}
-                <div className="absolute inset-0" style={{
-                  backgroundImage: 'linear-gradient(rgba(255, 0, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 0, 255, 0.1) 1px, transparent 1px)',
-                  backgroundSize: '30px 30px'
-                }}></div>
+              {/* Project Icon */}
+              <div className="h-32 bg-noir-black rounded mb-4 flex items-center justify-center border-2 border-cyber-pink/20 group-hover:border-cyber-pink/40 transition-all">
+                <span className="text-cyber-pink text-5xl font-mono font-bold neon-glow">
+                  {project.icon}
+                </span>
               </div>
 
-              {/* Project Content */}
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-cyber-white mb-3 font-mono">
-                  <span className="text-cyber-pink">&lt;</span>
-                  {project.title}
-                  <span className="text-cyber-pink">/&gt;</span>
-                </h3>
+              {/* Project Title */}
+              <h3 className="text-2xl font-bold text-cyber-white mb-3 font-mono">
+                <span className="text-cyber-pink">&lt;</span>
+                {project.title}
+                <span className="text-cyber-pink">/&gt;</span>
+              </h3>
 
-                <p className="text-sm text-cyber-gray leading-relaxed mb-4 line-clamp-3">
-                  {project.description}
-                </p>
+              {/* Project Description */}
+              <p className="text-cyber-gray text-sm leading-relaxed mb-4 grow">
+                {project.description}
+              </p>
 
-                {/* Technologies */}
-                <div className="mb-6">
-                  <div className="flex flex-wrap gap-1">
-                    {project.technologies.slice(0, 4).map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-2 py-1 bg-noir-black border border-cyber-pink/50 text-cyber-pink rounded text-xs font-mono hover:bg-cyber-pink/10 hover:border-cyber-pink transition-all"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 4 && (
-                      <span className="px-2 py-1 bg-noir-black border border-cyber-pink/30 text-cyber-pink/70 rounded text-xs font-mono">
-                        +{project.technologies.length - 4}
-                      </span>
-                    )}
-                  </div>
+              {/* Technologies */}
+              <div className="mb-4">
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="text-xs px-3 py-1 bg-noir-black border border-cyber-pink/50 text-cyber-pink rounded font-mono hover:bg-cyber-pink/10 hover:border-cyber-pink transition-all"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
+              </div>
 
-                {/* View Button */}
-                <a
-                  href={getViewUrl(project)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full px-4 py-2 bg-cyber-pink border-2 border-cyber-pink text-noir-black rounded font-mono font-bold hover:bg-transparent hover:text-cyber-pink transition-all duration-300 text-center block"
-                >
-                  {getViewText(project)}
-                </a>
+              {/* View Button */}
+              <div className="mt-auto">
+                {project.liveUrl ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-block text-center px-6 py-3 bg-cyber-pink border-2 border-cyber-pink text-noir-black rounded font-mono font-bold hover:bg-transparent hover:text-cyber-pink transition-all duration-300"
+                  >
+                    View Live Demo
+                  </a>
+                ) : project.githubUrl ? (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-block text-center px-6 py-3 bg-transparent border-2 border-cyber-cyan text-cyber-cyan rounded font-mono font-bold hover:bg-cyber-cyan hover:text-noir-black transition-all duration-300"
+                  >
+                    View Code
+                  </a>
+                ) : null}
               </div>
             </div>
           ))}
