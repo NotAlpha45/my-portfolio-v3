@@ -78,9 +78,6 @@ const Publications: React.FC = () => {
                   <h3 className="text-xl md:text-2xl font-bold text-cyber-white mb-2 group-hover:text-cyber-cyan transition-colors">
                     {pub.title}
                   </h3>
-                  <p className="text-cyber-gray text-sm font-mono mb-2">
-                    <span className="text-cyber-cyan">authors:</span> {pub.authors}
-                  </p>
                 </div>
                 <span className={`px-3 py-1 rounded text-xs font-bold uppercase ${getTypeColor(pub.type)}`}>
                   {pub.type}
