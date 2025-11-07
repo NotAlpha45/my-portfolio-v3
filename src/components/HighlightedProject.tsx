@@ -23,7 +23,7 @@ const HighlightedProject: React.FC = () => {
       title: 'Reganalytics',
       description: 'Modular tax analytics platform serving 10,000+ worldwide users with real-time tax tools and comprehensive financial analysis capabilities.',
       technologies: ['React', 'Single-SPA', '.NET'],
-      liveUrl: 'https://reganalytics.com/',
+      liveUrl: 'https://regplus.reganalytics.com/',
     },
     {
       title: 'Cyberbullying Detection',
