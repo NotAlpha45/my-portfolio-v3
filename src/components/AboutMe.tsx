@@ -42,7 +42,7 @@ const AboutMe: React.FC = () => {
             <div className="w-full h-96 bg-linear-to-br from-cyber-cyan/20 via-cyber-purple/20 to-cyber-pink/20 rounded-lg border-2 border-cyber-cyan/50 relative overflow-hidden">
               <div className="absolute inset-0 bg-noir-darker/30 backdrop-blur-sm"></div>
               <img 
-                src="/images/profile_pic.jpg" 
+                src="./images/profile_pic.jpg" 
                 alt="Maheen Mashrur Hoque" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
