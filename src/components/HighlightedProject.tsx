@@ -21,14 +21,14 @@ const HighlightedProject: React.FC = () => {
     },
     {
       title: 'Reganalytics',
-      description: 'Modular tax analytics platform serving 10,000+ worldwide users with real-time tax tools and comprehensive analytics capabilities.',
+      description: 'Modular tax analytics platform serving worldwide users with real-time tax tools and comprehensive analytics capabilities, covering world tax, transfer-pricing, entity management, and more.',
       technologies: ['React', 'Single-SPA', '.NET'],
       liveUrl: 'https://regplus.reganalytics.com/',
       icon: 'RG',
     },
     {
       title: 'Cyberbullying Detection',
-      description: 'Empirical study benchmarking models for detecting cyberbullying in Bangla text using state-of-the-art transformer models.',
+      description: 'Empirical study benchmarking models and BDA augmentation framework for detecting cyberbullying in Bangla text using state-of-the-art transformer models.',
       technologies: ['Python', 'Transformers', 'PyTorch'],
       githubUrl: 'https://github.com/NotAlpha45/bangla-cyberbullying',
       icon: 'CB',
