@@ -14,7 +14,7 @@ const HighlightedProject: React.FC = () => {
     {
       title: 'Reg-AI',
       description: 'A comprehensive tax expert AI agent system built with a knowledge base of 1.5 million+ records of tax-related information. Engineered a sophisticated data pipeline leveraging Agno and Pinecone to accelerate query speeds up to 2x.',
-      technologies: ['Next.js', 'React', 'FastAPI', 'Langchain', 'Agno', 'Transformers', 'Pinecone'],
+      technologies: ['React', 'FastAPI', 'Langchain', 'Agno', 'Transformers', 'Pinecone'],
       githubUrl: 'https://github.com/NotAlpha45',
       liveUrl: 'https://regplus.reganalytics.com/',
       icon: 'RA',
@@ -35,7 +35,7 @@ const HighlightedProject: React.FC = () => {
     },
     {
       title: 'Requirements Classifier',
-      description: 'Transformer-based ensemble for classifying software requirements with RAG-based zero-shot method for improved accuracy.',
+      description: 'Transformer-based ensemble for classifying software requirements with RAG-based zero-shot method for improved accuracy. Achieved state-of-the-art results on a benchmark dataset.',
       technologies: ['PyTorch', 'ChromaDB', 'Transformers'],
       githubUrl: 'https://github.com/NotAlpha45/Classification-of-Software-Requirements',
       icon: 'RC',
