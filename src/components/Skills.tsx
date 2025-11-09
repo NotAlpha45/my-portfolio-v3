@@ -22,22 +22,22 @@ const Skills: React.FC = () => {
       icon: '⚛️',
       skills: [
         {
-          name: 'React & TypeScript',
+          name: 'React Ecosystem',
           level: 90,
-          description: 'Building scalable SPAs with modern React patterns',
-          technologies: ['React 18', 'TypeScript', 'Hooks', 'Context API']
+          description: 'Production experience with React 18, TypeScript, Hooks, Context API, Redux, React Query. Built micro-frontend architectures using Single-SPA.',
+          technologies: ['React 18', 'TypeScript', 'Redux', 'Single-SPA']
         },
         {
           name: 'Modern Frameworks',
           level: 82,
-          description: 'Next.js, Svelte, and other cutting-edge frameworks',
-          technologies: ['Next.js', 'Svelte', 'Vite', 'Single-SPA']
+          description: 'Developed full-stack applications with Next.js (SSR/SSG), Svelte, and Vite. Experience with server components and API routes.',
+          technologies: ['Next.js', 'Svelte', 'Vite', 'SSR/SSG']
         },
         {
-          name: 'UI/UX Design',
+          name: 'Styling & Design Systems',
           level: 78,
-          description: 'Crafting beautiful, user-centric interfaces',
-          technologies: ['Figma', 'Tailwind', 'Bootstrap', 'Responsive Design']
+          description: 'Proficient in Tailwind CSS, Bootstrap, Material-UI. Created responsive designs with Figma prototypes. Implemented component libraries.',
+          technologies: ['Tailwind CSS', 'Figma', 'Bootstrap', 'Material-UI']
         }
       ]
     },
@@ -49,20 +49,20 @@ const Skills: React.FC = () => {
         {
           name: 'API Development',
           level: 85,
-          description: 'RESTful and GraphQL APIs with Node.js and Python',
-          technologies: ['FastAPI', 'Express', 'REST', 'GraphQL']
+          description: 'Built RESTful APIs with FastAPI and Express.js. Implemented authentication, rate limiting, and API versioning. Experience with GraphQL.',
+          technologies: ['FastAPI', 'Express.js', 'REST', 'GraphQL']
         },
         {
-          name: 'Database Design',
+          name: 'Database Systems',
           level: 80,
-          description: 'SQL and NoSQL database architecture',
+          description: 'Designed schemas for MongoDB, PostgreSQL. Implemented caching with Redis. Vector database experience with Pinecone for AI applications.',
           technologies: ['MongoDB', 'PostgreSQL', 'Redis', 'Pinecone']
         },
         {
-          name: 'Architecture',
+          name: 'System Architecture',
           level: 82,
-          description: 'Microservices and scalable system design',
-          technologies: ['.NET', 'Microservices', 'Docker', 'Cloud']
+          description: 'Developed microservices with .NET Core. Containerization with Docker. Cloud deployment on AWS/Azure. CI/CD pipeline configuration.',
+          technologies: ['.NET Core', 'Docker', 'AWS', 'Microservices']
         }
       ]
     },
@@ -72,47 +72,47 @@ const Skills: React.FC = () => {
       icon: '🤖',
       skills: [
         {
-          name: 'Deep Learning',
+          name: 'Deep Learning & NLP',
           level: 85,
-          description: 'NLP and transformer-based models',
-          technologies: ['PyTorch', 'Transformers', 'BERT', 'GPT']
+          description: 'Fine-tuned transformer models (BERT, GPT, T5) using PyTorch. Published research on text classification. Experience with Hugging Face ecosystem.',
+          technologies: ['PyTorch', 'Transformers', 'BERT', 'Hugging Face']
         },
         {
-          name: 'ML Engineering',
+          name: 'ML Engineering & MLOps',
           level: 88,
-          description: 'End-to-end ML pipelines and deployment',
-          technologies: ['Python', 'scikit-learn', 'TensorFlow', 'MLOps']
+          description: 'Built end-to-end ML pipelines with Python, scikit-learn. Model deployment and monitoring. Data preprocessing and feature engineering at scale.',
+          technologies: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas']
         },
         {
-          name: 'AI Agents',
+          name: 'LLM & AI Agents',
           level: 85,
-          description: 'Building intelligent agents with LangChain',
-          technologies: ['LangChain', 'Agno', 'RAG', 'Vector DBs']
+          description: 'Engineered production AI agents with LangChain and Agno. Implemented RAG systems with vector databases. Optimized LLM inference and prompt engineering.',
+          technologies: ['LangChain', 'Agno', 'RAG', 'OpenAI API']
         }
       ]
     },
     {
-      category: 'Tools & Others',
+      category: 'DevOps & Programming',
       color: 'cyber-blue',
       icon: '🛠️',
       skills: [
         {
-          name: 'Version Control',
+          name: 'Version Control & CI/CD',
           level: 88,
-          description: 'Git workflows and collaboration',
-          technologies: ['Git', 'GitHub', 'GitLab', 'CI/CD']
+          description: 'Git workflows (Git Flow, trunk-based). GitHub Actions, GitLab CI for automated testing and deployment. Code review and collaborative development.',
+          technologies: ['Git', 'GitHub Actions', 'GitLab CI', 'Jenkins']
         },
         {
-          name: 'Build Tools',
+          name: 'Build Tools & Bundlers',
           level: 82,
-          description: 'Modern bundlers and development tools',
+          description: 'Configured Webpack, Vite for optimized builds. Module federation for micro-frontends. npm/yarn package management. Babel transpilation.',
           technologies: ['Webpack', 'Vite', 'npm', 'Babel']
         },
         {
-          name: 'Programming',
+          name: 'Programming Languages',
           level: 80,
-          description: 'Multi-paradigm programming expertise',
-          technologies: ['C++', 'Java', 'R', 'Shell']
+          description: 'Strong foundation in C++ (algorithms, data structures), Java (OOP principles). Statistical computing with R. Shell scripting for automation.',
+          technologies: ['C++', 'Java', 'R', 'Bash/PowerShell']
         }
       ]
     }
