@@ -49,14 +49,14 @@ const Skills: React.FC = () => {
         {
           name: 'API Development',
           level: 85,
-          description: 'Built RESTful APIs with FastAPI and Express.js. Implemented authentication, rate limiting, and API versioning. Experience with GraphQL.',
-          technologies: ['FastAPI', 'Express.js', 'REST', 'GraphQL']
+          description: 'Built RESTful APIs with FastAPI and Express.js. Implemented authentication, rate limiting, and API versioning.',
+          technologies: ['FastAPI', 'Express.js', 'REST API']
         },
         {
           name: 'Database Systems',
           level: 80,
-          description: 'Designed schemas for MongoDB, PostgreSQL. Implemented caching with Redis. Vector database experience with Pinecone for AI applications.',
-          technologies: ['MongoDB', 'PostgreSQL', 'Redis', 'Pinecone']
+          description: 'Designed schemas for MongoDB, MySQL. Vector database experience with Pinecone for AI applications.',
+          technologies: ['MongoDB', 'MySQL', 'Pinecone']
         },
         {
           name: 'System Architecture',
@@ -106,20 +106,20 @@ const Skills: React.FC = () => {
           name: 'Build Tools & Bundlers',
           level: 82,
           description: 'Configured Webpack, Vite for optimized builds. Module federation for micro-frontends. npm/yarn package management. Babel transpilation.',
-          technologies: ['Webpack', 'Vite', 'npm', 'Babel']
+          technologies: ['Webpack', 'Vite', 'npm']
         },
         {
           name: 'Programming Languages',
           level: 80,
-          description: 'Strong foundation in C++ (algorithms, data structures), Java (OOP principles). Statistical computing with R. Shell scripting for automation.',
-          technologies: ['C++', 'Java', 'R', 'Bash/PowerShell']
+          description: 'Strong foundation in C (algorithms, data structures), Java/Python (OOP principles). Statistical computing with Python/R. Shell scripting for automation.',
+          technologies: ['Python', 'Javascript/Typescript', 'C', 'Java', 'R', 'Bash/PowerShell']
         }
       ]
     }
   ];
 
   const getColorClass = (color: string) => {
-    switch(color) {
+    switch (color) {
       case 'cyber-cyan': return 'bg-cyber-cyan text-noir-black';
       case 'cyber-purple': return 'bg-cyber-purple text-noir-black';
       case 'cyber-pink': return 'bg-cyber-pink text-noir-black';
@@ -129,7 +129,7 @@ const Skills: React.FC = () => {
   };
 
   const getBorderClass = (color: string) => {
-    switch(color) {
+    switch (color) {
       case 'cyber-cyan': return 'border-cyber-cyan';
       case 'cyber-purple': return 'border-cyber-purple';
       case 'cyber-pink': return 'border-cyber-pink';
@@ -139,7 +139,7 @@ const Skills: React.FC = () => {
   };
 
   const getTextClass = (color: string) => {
-    switch(color) {
+    switch (color) {
       case 'cyber-cyan': return 'text-cyber-cyan';
       case 'cyber-purple': return 'text-cyber-purple';
       case 'cyber-pink': return 'text-cyber-pink';
@@ -157,7 +157,7 @@ const Skills: React.FC = () => {
         <p className="text-cyber-gray font-mono mb-12 text-xl">
           <span className="text-cyber-purple">&gt;</span> Technical Arsenal
         </p>
-        
+
         {/* Skill Categories */}
         <div className="space-y-12">
           {skillCategories.map((category, categoryIndex) => (
@@ -195,7 +195,7 @@ const Skills: React.FC = () => {
 
                     {/* Progress Bar */}
                     <div className="relative h-2 bg-noir-gray rounded-full overflow-hidden mb-4">
-                      <div 
+                      <div
                         className={`absolute top-0 left-0 h-full ${getColorClass(category.color)} rounded-full transition-all duration-1000 ease-out`}
                         style={{ width: `${skill.level}%` }}
                       >
